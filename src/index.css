@@ -419,17 +419,17 @@ Nav Links
 .nav-links {
   display: none;
 }
+
 @media screen and (min-width: 992px) {
   .nav-links {
     display: flex;
     justify-content: center;
-
-    align-self: stretch;
+    border: 2px solid red;
   }
   .nav-center {
-    align-self: stretch;
     display: grid;
     grid-template-columns: auto 1fr;
+    border: 2px solid green;
   }
   .nav-link {
     padding: 0 1rem;
@@ -440,6 +440,7 @@ Nav Links
     text-transform: capitalize;
     letter-spacing: var(--letterSpacing);
     cursor: pointer;
+    border: 2px solid blue;
   }
 }
 
