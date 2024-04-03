@@ -12,7 +12,7 @@ const Navbar = () => {
         <button className="toggle-btn" onClick={openSidebar}>
           <FaBars />
         </button>
-        <NavLinks/>
+        <NavLinks />
       </div>
     </nav>
   );
