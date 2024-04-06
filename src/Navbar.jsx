@@ -13,6 +13,7 @@ const Navbar = () => {
           <FaBars />
         </button>
         <NavLinks />
+        diofbg;iobsfug[pubg[paubfg]]
       </div>
     </nav>
   );
