@@ -3,7 +3,7 @@ import { useGlobalContext } from "./context";
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {
-  const { openSidebar } = useGlobalContext();
+  const { openSidebar, setPageId } = useGlobalContext();
 
   return (
     <nav>
