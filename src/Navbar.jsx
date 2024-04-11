@@ -5,8 +5,15 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   const { openSidebar, setPageId } = useGlobalContext();
 
+  const handleSubmit = (e) =>{
+    // console.log(e.target)
+    if(!e.target.classList.contains('nav-link')){
+      setPageId(null)
+    }
+  }
+
   return (
-    <nav>
+    <nav onMouseOver={handleSubmit}>
       <div className="nav-center">
         <h3 className="logo">strapi</h3>
         <button className="toggle-btn" onClick={openSidebar}>
@@ -14,7 +21,7 @@ const Navbar = () => {
         </button>
         <NavLinks />
       </div>
-      ioegurb8edg8eubpgue
+      
     </nav>
   );
 };
