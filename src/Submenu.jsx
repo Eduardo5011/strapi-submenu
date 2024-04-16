@@ -22,6 +22,7 @@ const Submenu = () => {
     <div
       className={currentPage ? "submenu show-submenu" : "submenu"}
       onMouseLeave={handleMouseLeave}
+      ref={submenuContainer}
     >
       <h5>{currentPage?.page}</h5>
       <div
